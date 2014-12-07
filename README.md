@@ -5,6 +5,10 @@ A helper jQuery plugin that toggles your menu element's CSS class depending on w
 ![demo](http://i.imgur.com/4BdKgKm.gif)
 
 ##Usage example
+
+###HTML
+See this repo's [index.html](https://github.com/ThePaavero/FlexMenu/blob/master/index.html)
+
 ###JS
 ```javascript
 var menu = $('header nav');
