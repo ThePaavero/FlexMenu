@@ -24,7 +24,9 @@
 <script>
     $(function () {
         var menu = $('header nav');
-        menu.flexMenu();
+        menu.flexMenu({
+            itemSelector : 'ul li a'
+        });
     });
 </script>
 </body>

@@ -1,10 +1,17 @@
 (function ($) {
 
-    $.fn.flexMenu = function () {
+    $.fn.flexMenu = function (conf) {
+
+        var settings = {
+            itemSelector : conf.itemSelector || 'a',
+            hamburgerSelector : conf.hamburgerSelector || '.nav-hamburger',
+            bufferSize : conf.bufferSize || 30,
+            classNameReduced : conf.classNameReduced || 'reduced'
+        };
 
         var wrappingElement = this;
         var items;
-        var buffer = 50;
+        var buffer = settings.bufferSize;
 
         var availableWidth;
         var itemsAddedWidth;
@@ -12,7 +19,7 @@
 
         var init = function () {
 
-            items = wrappingElement.find('a').not('.nav-hamburger');
+            items = wrappingElement.find(settings.itemSelector).not(settings.hamburgerSelector);
             itemsAddedWidth = getItemsAddedWidth();
 
             onChange();
@@ -56,10 +63,10 @@
         var setMode = function (mode) {
 
             if (mode === 'normal') {
-                wrappingElement.removeClass('reduced');
+                wrappingElement.removeClass(settings.classNameReduced);
                 wrappingElement.addClass('normal');
             } else {
-                wrappingElement.addClass('reduced');
+                wrappingElement.addClass(settings.classNameReduced);
                 wrappingElement.removeClass('normal');
             }
 

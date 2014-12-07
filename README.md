@@ -34,3 +34,9 @@ header .nav-hamburger {
 	display: none;
 }
 ```
+
+##Options (key: default value)
+* itemSelector: "ul li a",
+* hamburgerSelector: ".nav-hamburger",
+* bufferSize: 30,
+* classNameReduced: "reduced"
