@@ -1,0 +1,46 @@
+body {
+	background: #232323;
+	color: #fff;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+header nav {
+	margin: 0;
+	padding: 0;
+	max-width: 900px;
+	margin: 0 auto;
+	background: #373737;
+}
+
+header nav.reduced .nav-hamburger {
+	display: inline-block;
+}
+
+header nav.reduced ul {
+	display: none;
+}
+
+header nav a {
+	display: block;
+	padding: 10px 30px;
+	color: #beffb9;
+	font-size: 20px;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+header .nav-hamburger {
+	display: none;
+}
