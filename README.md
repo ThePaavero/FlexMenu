@@ -1,10 +1,17 @@
 #FlexMenu
-
 A helper jQuery plugin that toggles your menu element's CSS class depending on whether its items fit in one row or not.
+
+##The Problem
+Sometimes a static breakpoint for a single-row, horizontal menu to go into "mobile mode" is problematic. Sometimes you just can't know for sure
+how many items your menu wrapper will be holding or how many characters your link items will have (cases where your client can add and remove main level pages, language versions, etc.).
+
+##The Solution
+A script that actually adds up the width of your items and throws the menu into "mobile mode" when the items won't fit.
+It does this both on load and on the window's resize event.
 
 ![demo](http://i.imgur.com/4BdKgKm.gif)
 
-##Usage example
+##Usage Example
 
 ###HTML
 See this repo's [index.html](https://github.com/ThePaavero/FlexMenu/blob/master/index.html)
