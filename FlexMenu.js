@@ -12,7 +12,7 @@
 
         var init = function () {
 
-            items = wrappingElement.find('ul a').not('.nav-hamburger');
+            items = wrappingElement.find('a').not('.nav-hamburger');
             itemsAddedWidth = getItemsAddedWidth();
 
             onChange();

@@ -2,6 +2,8 @@
 
 A helper jQuery plugin that toggles your menu element's CSS class depending on wether its items fit in one row or not.
 
+![demo](http://i.imgur.com/4BdKgKm.gif)
+
 ##Usage example
 ###JS
 ```javascript
